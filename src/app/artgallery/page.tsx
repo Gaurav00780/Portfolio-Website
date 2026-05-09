@@ -115,6 +115,12 @@ const VideoFrame: React.FC<VideoFrameProps> = ({
 
 const ArtGallery = () => {
   const projects = [
+     {
+      id: 0,
+      videoUrl: "video/expandablecard.mp4",
+      liveUrl: "https://swamii.me/artgallery/expandablecard",
+  
+    },
       {
       id: 1,
       videoUrl: "video/realtime.mp4",
