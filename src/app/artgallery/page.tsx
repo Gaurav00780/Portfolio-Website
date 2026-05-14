@@ -118,7 +118,7 @@ const ArtGallery = () => {
      {
       id: 0,
       videoUrl: "video/rotatingcard.mp4",
-      liveUrl: "https://swamii.me/artgallery/rotatingcard",
+      liveUrl: "https://swamii.me/artgallery/rotatingcards",
   
     },
      {
