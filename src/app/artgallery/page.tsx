@@ -117,30 +117,36 @@ const ArtGallery = () => {
   const projects = [
      {
       id: 0,
+      videoUrl: "video/rotatingcard.mp4",
+      liveUrl: "https://swamii.me/artgallery/rotatingcard",
+  
+    },
+     {
+      id: 1,
       videoUrl: "video/expandablecard.mp4",
       liveUrl: "https://swamii.me/artgallery/expandablecard",
   
     },
       {
-      id: 1,
+      id: 2,
       videoUrl: "video/realtime.mp4",
       liveUrl: "https://swamii.me/artgallery/realtimecard",
   
     },
     {
-      id: 2,
+      id: 4,
       videoUrl: "video/skillpill.mp4",
       liveUrl: "https://swamii.me/artgallery/skillpill",
   
     },
     {
-      id: 3,
+      id: 5,
       videoUrl: "video/foldercomponent.mp4",
       liveUrl: "https://swamii.me/artgallery/foldercomponent",
       twitterUrl: "https://x.com/SwamiMalode/status/1987369556470341668?s=20",
     },
     {
-      id: 4,
+      id: 6,
       videoUrl: "video/card.mp4",
       liveUrl: "https://swamii.me/artgallery/cardcomponent",
     }
