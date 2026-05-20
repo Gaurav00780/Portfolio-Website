@@ -115,29 +115,34 @@ const VideoFrame: React.FC<VideoFrameProps> = ({
 
 const ArtGallery = () => {
   const projects = [
-     {
+    {
       id: 0,
+      videoUrl: "video/autozoom.mp4",
+      liveUrl: "https://swamii.me/artgallery/autozoom",
+    },
+    {
+      id: 1,
       videoUrl: "video/rotatingcard.mp4",
       liveUrl: "https://swamii.me/artgallery/rotatingcards",
-  
+
     },
-     {
-      id: 1,
+    {
+      id: 2,
       videoUrl: "video/expandablecard.mp4",
       liveUrl: "https://swamii.me/artgallery/expandablecard",
-  
+
     },
-      {
-      id: 2,
+    {
+      id: 3,
       videoUrl: "video/realtime.mp4",
       liveUrl: "https://swamii.me/artgallery/realtimecard",
-  
+
     },
     {
       id: 4,
       videoUrl: "video/skillpill.mp4",
       liveUrl: "https://swamii.me/artgallery/skillpill",
-  
+
     },
     {
       id: 5,
@@ -154,49 +159,49 @@ const ArtGallery = () => {
   const router = useRouter()
 
   return (
-   <div className="bg-black min-h-screen">
-  <Container>
-    <div className="w-full md:px-8">
-      <div className="text-white px-4 md:px-6 max-w-7xl mx-auto">
+    <div className="bg-black min-h-screen">
+      <Container>
+        <div className="w-full md:px-8">
+          <div className="text-white px-4 md:px-6 max-w-7xl mx-auto">
 
-        {/* Back button */}
-        <div className="mt-8 mb-10">
-          <Link href="/">
-            <Button variant="primary" size="lg">
-              <Undo2 className="w-4 h-4 mr-2" /> Back
-            </Button>
-          </Link>
-        </div>
-
-        {/* Header */}
-        <div className="mb-8">
-          <h1 className="text-5xl md:text-6xl font-semibold font-space-grotesk mb-3">
-            Art Gallery
-          </h1>
-          <p className="text-lg text-neutral-500">
-            Animated components that i made from Design to Code :)
-          </p>
-        </div>
-
-        <hr className="border-[0.5px] border-[#424244] mb-8" />
-
-        {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pb-16">
-          {projects.map((project) => (
-            <div key={project.id}>
-              <VideoFrame
-                videoUrl={project.videoUrl}
-                liveUrl={project.liveUrl}
-                twitterUrl={project.twitterUrl}
-              />
+            {/* Back button */}
+            <div className="mt-8 mb-10">
+              <Link href="/">
+                <Button variant="primary" size="lg">
+                  <Undo2 className="w-4 h-4 mr-2" /> Back
+                </Button>
+              </Link>
             </div>
-          ))}
-        </div>
 
-      </div>
+            {/* Header */}
+            <div className="mb-8">
+              <h1 className="text-5xl md:text-6xl font-semibold font-space-grotesk mb-3">
+                Art Gallery
+              </h1>
+              <p className="text-lg text-neutral-500">
+                Animated components that i made from Design to Code :)
+              </p>
+            </div>
+
+            <hr className="border-[0.5px] border-[#424244] mb-8" />
+
+            {/* Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pb-16">
+              {projects.map((project) => (
+                <div key={project.id}>
+                  <VideoFrame
+                    videoUrl={project.videoUrl}
+                    liveUrl={project.liveUrl}
+                    twitterUrl={project.twitterUrl}
+                  />
+                </div>
+              ))}
+            </div>
+
+          </div>
+        </div>
+      </Container>
     </div>
-  </Container>
-</div>
   );
 };
 
