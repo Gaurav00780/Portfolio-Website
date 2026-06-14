@@ -33,7 +33,7 @@ export const projects: Project[] = [
     id: 2,
     name: "Ai-Customer-Support-Chatbot",
     description:
-      "A SaaS landing page with interactive animations built using modern frontend technologies.",
+      "An AI-powered customer support chatbot platform that enables businesses to automate customer interactions, provide instant responses, and seamlessly integrate a customizable chat widget into their websites.",
     image: "/Project/ProjectImages/ai-chatbot.png",
     link: "https://ai-customer-support-bot-alpha.vercel.app/",
     github: "https://github.com/Gaurav00780/Ai-Customer-Support-Bot",
