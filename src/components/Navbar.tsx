@@ -4,17 +4,13 @@ import React, { useState, useEffect } from "react";
 import CommandMenu from "./CommandMenu";
 import { GitHubIcon } from "@/app/icons/Githubicon";
 import { useRouter } from "next/navigation";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
+
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const [isCommandMenuOpen, setIsCommandMenuOpen] =
     useState<boolean>(false);
-  const [stars, setStars] = useState<number | null>(null);
+
 
   const router = useRouter();
 
@@ -46,27 +42,14 @@ const Navbar: React.FC = () => {
     };
   }, []);
 
-  useEffect(() => {
-    const fetchGithubStars = async () => {
-      try {
-        const response = await fetch(
-          "https://api.github.com/repos/swamimalode07/swamii.me"
-        );
-        const data = await response.json();
-        setStars(data.stargazers_count);
-      } catch (error) {
-        return null;
-      }
-    };
-    fetchGithubStars();
-  }, []);
+
 
   return (
     <div className="relative">
       <div className="border-b border-borderGrey px-[2%] py-2 fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-400 z-50 bg-transparent backdrop-blur-2xl">
         <div className="flex items-center justify-between px-4 py-3 sm:px-6">
           <p className="font-space-grotesk text-sm font-semibold text-white sm:text-xl">
-            @code by SWAMI
+            @code by Gaurav
           </p>
 
           <div className="flex items-center gap-3 sm:gap-6 lg:gap-8">
@@ -78,35 +61,16 @@ const Navbar: React.FC = () => {
                 Projects
               </button>
 
-              <div className="hidden md:flex items-center gap-6">
-                <button
-                  className="font-sans font-medium text-white/60 hover:text-white transition-colors"
-                  onClick={() => router.push("/artgallery")}
-                >
-                  Art Gallery
-                </button>
-
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <button
-                      onClick={() =>
-                        router.push(
-                          "https://github.com/swamimalode07/swamii.me"
-                        )
-                      }
-                      className="flex items-center gap-2 px-3 py-2 rounded-md hover:bg-[#1C1C1F] transition-colors"
-                    >
-                      <GitHubIcon className="h-5 w-5 text-white/60 hover:text-white transition-colors" />
-                      <span className="text-white/60 hover:text-white text-sm">
-                        {stars ?? "--"}
-                      </span>
-                    </button>
-                  </TooltipTrigger>
-                  <TooltipContent className="bg-black border border-white/20">
-                    <p className="text-lg">{stars} stars</p>
-                  </TooltipContent>
-                </Tooltip>
-              </div>
+              <button
+                onClick={() =>
+                  router.push(
+                    "https://github.com/Gaurav00780/"
+                  )
+                }
+                className="flex items-center gap-2 px-3 py-2 rounded-md hover:bg-[#1C1C1F] transition-colors"
+              >
+                <GitHubIcon className="h-5 w-5 text-white/60 hover:text-white transition-colors" />
+              </button>
             </div>
 
             <button
@@ -115,28 +79,24 @@ const Navbar: React.FC = () => {
               aria-label="Toggle menu"
             >
               <span
-                className={`h-0.5 w-4 bg-white transition-all duration-300 ${
-                  isMenuOpen ? "translate-y-1.5 rotate-45" : ""
-                }`}
+                className={`h-0.5 w-4 bg-white transition-all duration-300 ${isMenuOpen ? "translate-y-1.5 rotate-45" : ""
+                  }`}
               />
               <span
-                className={`h-0.5 w-4 bg-white transition-all duration-300 ${
-                  isMenuOpen ? "opacity-0" : ""
-                }`}
+                className={`h-0.5 w-4 bg-white transition-all duration-300 ${isMenuOpen ? "opacity-0" : ""
+                  }`}
               />
               <span
-                className={`h-0.5 w-4 bg-white transition-all duration-300 ${
-                  isMenuOpen ? "-translate-y-1.5 -rotate-45" : ""
-                }`}
+                className={`h-0.5 w-4 bg-white transition-all duration-300 ${isMenuOpen ? "-translate-y-1.5 -rotate-45" : ""
+                  }`}
               />
             </button>
           </div>
         </div>
 
         <div
-          className={`overflow-hidden transition-all duration-300 ease-in-out md:hidden ${
-            isMenuOpen ? "max-h-64 opacity-100" : "max-h-0 opacity-0"
-          }`}
+          className={`overflow-hidden transition-all duration-300 ease-in-out md:hidden ${isMenuOpen ? "max-h-64 opacity-100" : "max-h-0 opacity-0"
+            }`}
         >
           <div className="border-t-2 border-[#1C1C1F] px-4 pb-4">
             <div className="space-y-1 pt-3">
@@ -156,13 +116,6 @@ const Navbar: React.FC = () => {
               >
                 Search
               </button> */}
-
-              <button
-                className="block w-full rounded-lg px-3 py-3 text-left font-sans font-medium text-white transition-colors hover:bg-[#1C1C1F] hover:text-gray-300"
-                onClick={() => router.push("/artgallery")}
-              >
-                Art Gallery
-              </button>
             </div>
           </div>
         </div>

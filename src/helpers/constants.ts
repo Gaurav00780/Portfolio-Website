@@ -12,75 +12,54 @@ export type Project = {
 export const projects: Project[] = [
   {
     id: 0,
-    name:"VidStudio",
-    description:"A video editing app that allows users to create and edit videos with a variety of tools and effects.",
-    image: "/Project/ProjectImages/vidstudio.png",
-    link: "https://vidstudio.live",
-    status: "building",
-    projectBg:"/Project/ProjectBackground/vidstudio.png",
+    name: "FlowPilot",
+    description: "A smart web-based productivity application that uses artificial intelligence to convert user goals into organized tasks for better productivity and task management.",
+    image: "/Project/ProjectImages/flowpilot.png",
+    link: "https://flowpilott.vercel.app",
+    status: "live",
+    projectBg: "/Project/ProjectBackground/vidstudio.png",
   },
   {
     id: 1,
-    name: "GhostType",
-    description:"A minimalistic typing test app designed to improve typing speed and accuracy with a dynamic leaderboard.",
-    image: "/Project/ProjectImages/ghosttype.png",
-    link: "https://ghosttype.swamii.me",
-    github: "https://github.com/swamimalode07/ghosttype",
-     status: "live",
-     projectBg:"/Project/ProjectBackground/ghosttype.png"
+    name: "TestPilot AI",
+    description: "The next generation of browser testing powered by AI-driven visual analysis and intelligent debugging workflows.",
+    image: "/Project/ProjectImages/testpilot.png",
+    link: "https://test-pilot-waitlist.vercel.app/",
+    // github: "https://github.com/Gaurav00780/ghosttype",
+    status: "building",
+    projectBg: "/Project/ProjectBackground/ghosttype.png"
   },
   {
     id: 2,
-    name: "Layers Landing Page",
+    name: "Ai-Customer-Support-Chatbot",
     description:
       "A SaaS landing page with interactive animations built using modern frontend technologies.",
-    image: "/Project/ProjectImages/layers.png",
-    link: "https://landing.swamii.me",
-    github: "https://github.com/swamimalode07/SaaS-Landing-Page",
-      status: "live",
-      projectBg:"/Project/ProjectBackground/layers.png"
+    image: "/Project/ProjectImages/ai-chatbot.png",
+    link: "https://ai-customer-support-bot-alpha.vercel.app/",
+    github: "https://github.com/Gaurav00780/Ai-Customer-Support-Bot",
+    status: "live",
+    projectBg: "/Project/ProjectBackground/layers.png"
   },
   {
     id: 3,
-    name: "Anieditor",
+    name: "3D Landing Page",
     description:
-      "An app that lets users apply anime overlays and custom images on top of their photos.",
-    image: "/Project/ProjectImages/anieditor.png",
-    link: "https://anieditor.vercel.app",
-    github: "https://github.com/swamimalode07/anieditor",
+      "A SaaS landing page with interactive animations built using modern frontend technologies.",
+    image: "/Project/ProjectImages/3d-landing.png",
+    link: "https://3d-landing-page-kappa-three.vercel.app/",
+    github: "https://github.com/Gaurav00780/3d-landing-page",
     status: "live",
     projectBg: "/Project/ProjectBackground/anieditor.png"
   },
   {
     id: 4,
-    name: "ClearStatus",
+    name: "Snapshare",
     description:
-      "A multi-tenant status page for SaaS teams to share incidents, maintenance, and uptime updates.",
-    image: "/Project/ProjectImages/clearstatus.png",
-    link: "https://clearstatus.vercel.app",
-    github: "https://github.com/swamimalode07/clearstatus",
+      "A fast, lightweight, device-agnostic file sharing web app built using Vite + React with Supabase Storage as the backend.",
+    image: "/Project/ProjectImages/snapshare.png",
+    link: "https://snap-qrshare.vercel.app",
+    github: "https://github.com/Gaurav00780/cross-platform-file-sharing",
     status: "discontinued",
     projectBg: "/Project/ProjectBackground/clearstatus.png"
-  },
-  {
-    id: 5,
-    name: "Simon Game",
-    description:
-      "An interactive memory game with a competitive leaderboard system.",
-    image: "/Project/ProjectImages/simon.png",
-    link: "https://simonsaysplay.vercel.app/login",
-    github: "https://github.com/swamimalode07/SimonsaysGame",
-    status: "live",
-    projectBg: "/Project/ProjectBackground/simon.png"
-  },
-  {
-    id: 6,
-    name: "Mach5 Software",
-    description:
-      "Frontend development work transforming Figma designs into fully responsive web pages.",
-    image: "/Project/ProjectImages/mach.png",
-    link: "https://mach5.io",
-    status: "live",
-    projectBg: "/Project/ProjectBackground/mach.png"
   },
 ];

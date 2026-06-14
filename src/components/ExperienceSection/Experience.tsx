@@ -5,29 +5,16 @@ const ExperienceSection = () => {
     return (
         <div className='flex flex-col py-10 '>
             <Experience
-                logo="experience/conduit_commerce_logo.jpg"
-                company="Conduit Commerce"
-                role="Intern"
-                duration="Aug 2025 - Present"
+                logo="experience/digisamaksh_logo.png"
+                company="Digisamaksh"
+                role="IT Intern"
+                duration="JULY 2025 - SEPTEMBER 2025"
                 points={[
-                    "Contributing to the development of enterprise-grade frontend systems powering modern wholesale e-commerce.",
-                    "Collaborating with the engineering team to build scalable, responsive UI components and optimize performance across the platform."
+                    "Built and customized WordPress websites using Elementor, WooCommerce, and Astra Theme, delivering responsive and visually engaging user experiences.",
+                    "Worked closely with the development team to optimize website performance, manage plugins, enhance SEO, and maintain scalable, high-quality web solutions."
                 ]}
-                rounded='top'
-                skills={['Next.js', 'TypeScript', 'Tailwind CSS',"Redux","Python","FastAPI","Docker"]}
-            />
-            <Experience
-                logo="experience/mach5.png"
-                company="Mach5 Software"
-                role="Freelance"
-                duration="Mar 2025 - May 2025"
-                points={[
-                    "Worked as a Frontend Developer, transforming Figma design into fully responsive, high-performance website",
-                    "Implemented core SEO features: lazy loading, WebP images, clean URLs, meta tags, Open Graph, and accessibility.",
-                    "Set up essential SEO infrastructure that includes robots.txt, dynamic sitemap.xml, and crawlable internal links."
-                ]}
-                rounded='bottom'
-                skills={["HTML","Tailwind CSS","SEO"]}
+                //rounded='top'
+                skills={["WordPress", "Elementor", "WooCommerce", "Astra Theme", "HTML5", "CSS3", "JavaScript", "Responsive Design", "SEO", "Website Optimization", "cPanel", "Website Migration"]}
             />
         </div>
     )

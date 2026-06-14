@@ -3,7 +3,6 @@ import React, { useState, useEffect, useRef } from "react";
 import {
   Search,
   Folder,
-  Palette,
   LucideIcon,
   X,
 } from "lucide-react";
@@ -36,13 +35,6 @@ const CommandMenu: React.FC<CommandMenuProps> = ({ isOpen, onClose }) => {
       title: "Projects",
       description: "View my projects",
       icon: Folder,
-      category: "Pages",
-    },
-    {
-      id: "artgallery",
-      title: "Art Gallery",
-      description: "Animated coding components",
-      icon: Palette,
       category: "Pages",
     },
   ];
@@ -121,12 +113,6 @@ const CommandMenu: React.FC<CommandMenuProps> = ({ isOpen, onClose }) => {
   }, [selectedIndex]);
 
   const handleSelectItem = (section: Section): void => {
-  if (section.id === "artgallery") {
-    router.push("/artgallery");
-    onClose();
-    return;
-  }
-
   router.push(`/${section.id}`);
   onClose();
 };
@@ -246,7 +232,7 @@ const CommandMenu: React.FC<CommandMenuProps> = ({ isOpen, onClose }) => {
               </div>
             </div>
             <div className="font-sans text-sm text-gray-500">
-              @code by SWAMI
+              @code by GAURAV
             </div>
           </div>
         </div>

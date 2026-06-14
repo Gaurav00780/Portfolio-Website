@@ -1,6 +1,6 @@
-# Swami's Portfolio
+# Gaurav's Portfolio
 
-[swamii.me](https://swamii.me) – A personal portfolio to showcase my work, projects, and UI/UX designs as a Full Stack Developer and Design Engineer.
+[gaurav.me](https://gaurav.me) – A personal portfolio to showcase my work, projects, and UI/UX designs as a Full Stack Developer and Design Engineer.
 
 ---
 
@@ -21,13 +21,13 @@ This is a minimal, modern, and responsive portfolio built with the latest web te
 
 ## Live Site
 
-Check it out: [swamii.me](https://swamii.me)
+Check it out: [gaurav.me](https://gaurav.me)
 
 ---
 
 ## Github Stars
 
-[![RepoStars](https://repostars.dev/api/embed?repo=swamimalode07%2Fswamii.me&theme=synthwave)](https://repostars.dev/?repos=swamimalode07%2Fswamii.me&theme=synthwave)
+[![RepoStars](https://repostars.dev/api/embed?repo=Gaurav00780%2Fgaurav.me&theme=synthwave)](https://repostars.dev/?repos=Gaurav00780%2Fgaurav.me&theme=synthwave)
 
 ---
 
@@ -57,8 +57,8 @@ To run locally:
 
 ```bash
 # Clone the repo
-git clone https://github.com/swamimalode07/swamii.me.git
-cd swamii.me
+git clone https://github.com/Gaurav00780/gaurav.me.git
+cd gaurav.me
 
 # Install dependencies
 npm install   

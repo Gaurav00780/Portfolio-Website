@@ -25,8 +25,8 @@ const ProjectsPage = () => {
       technologies: ["React", "Tailwind CSS", "Appwrite"],
       year: "2025",
       image: "/ghosttype.png",
-      github: "swamimalode07/ghosttype",
-      live: "https://ghosttype.swamii.me",
+      github: "Gaurav00780/ghosttype",
+      live: "https://ghosttype.gaurav.me",
     },
     {
       id: 2,
@@ -37,8 +37,8 @@ const ProjectsPage = () => {
       technologies: ["Next.js", "Framer motion", "Tailwind CSS", "Typescript"],
       year: "2025",
       image: "/layers.png",
-      github: "swamimalode07/SaaS-Landing-Page",
-      live: "https://landing.swamii.me",
+      github: "Gaurav00780/SaaS-Landing-Page",
+      live: "https://landing.gaurav.me",
     },
     {
       id: 3,
@@ -49,7 +49,7 @@ const ProjectsPage = () => {
       technologies: ["React", "Tailwind CSS"],
       year: "2025",
       image: "/anieditor.png",
-      github: "swamimalode07/anieditor",
+      github: "Gaurav00780/anieditor",
       live: "https://anieditor.vercel.app",
     },
     {
@@ -61,7 +61,7 @@ const ProjectsPage = () => {
       technologies: ["React", "Go", "Tailwind CSS", "PostgreSQL"],
       year: "2025",
       image: "/clearstatus.png",
-      github: "swamimalode07/clearstatus",
+      github: "Gaurav00780/clearstatus",
       live: "https://clearstatus.vercel.app",
     },
     {
@@ -73,7 +73,7 @@ const ProjectsPage = () => {
       technologies: ["HTML", "CSS", "Node.jsx", "Express", " MongoDB"],
       year: "2024",
       image: "/simon.png",
-      github: "swamimalode07/SimonsaysGame",
+      github: "Gaurav00780/SimonsaysGame",
       live: "https://simonsaysplay.vercel.app/login",
     },
     {

@@ -32,8 +32,8 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
-  title: "Swami Malode",
-  description: "Swami's Portfolio site.",
+  title: "Gaurav Suthar",
+  description: "Gaurav Suthar's Portfolio site.",
   icons: {
     icon: "/official/logo.png",
   },
@@ -43,16 +43,16 @@ export const metadata: Metadata = {
     "Next.js Portfolio",
     "React Developer",
     "Tailwind CSS",
-    "Swami Malode",
+    "Gaurav Suthar",
   ],
   openGraph: {
-    title: "Swami's Portfolio",
-    description: "Swami's Portfolio site.",
-    url: "https://swamii.me",
-    siteName: "Swami's Portfolio site",
+    title: "Gaurav's Portfolio",
+    description: "Gaurav Suthar's Portfolio site.",
+    url: "https://gaurav.me",
+    siteName: "Gaurav Suthar's Portfolio site",
     images: [
       {
-        url: "https://swamii.me/official/opengraphh.jpg",
+        url: "https://gaurav.me/official/opengraphh.jpg",
         width: 1200,
         height: 630,
         alt: "My OG Image",
@@ -63,24 +63,25 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Swami's Portfolio",
+    title: "Gaurav's Portfolio",
     description: "This is my portfolio.",
-    images: ["https://swamii.me/official/opengraphh.jpg"],
-    creator: "@SwamiMalode",
+    images: ["https://gaurav.me/official/opengraphh.jpg"],
+    creator: "@suthargaurav95",
   },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <Script
           data-website-id="dfid_wVN5yIAv7uo506eTbSUQ5"
-          data-domain="swamii.me"
+          data-domain="gaurav.me"
           src="https://datafa.st/js/script.js"
           strategy="afterInteractive"
         />
-        <link rel="canonical" href="https://swamii.me" />
+        <link rel="canonical" href="https://gaurav.me" />
+        <link rel="icon" href="/logo.ico" />
 
         <script
           type="application/ld+json"
@@ -88,25 +89,23 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
-              name: "Swami Malode",
-              url: "https://swamii.me",
+              name: "Gaurav Suthar",
+              url: "https://gaurav.me",
               sameAs: [
-                "https://github.com/swamimalode07",
-                "https://linkedin.com/in/swamimalode",
-                "https://x.com/swamimalode",
+                "https://github.com/Gaurav00780",
+                "https://linkedin.com/in/gauravsuthar7",
+                "https://x.com/suthargaurav95",
               ],
               jobTitle: "Frontend Developer & UI/UX Designer",
-              image: "https://swamii.me/opengraphh.jpg",
+              image: "https://gaurav.me/opengraphh.jpg",
             }),
           }}
         />
       </head>
 
-      <link rel="icon" href="/logo.ico" />
-
-      <body className={` ${geistSans.variable} ${geistMono.variable} ${GeistPixelSquare.variable} ${spaceGrotesk.variable} ${syne.variable} antialiased`}>
+      <body suppressHydrationWarning className={` ${geistSans.variable} ${geistMono.variable} ${GeistPixelSquare.variable} ${spaceGrotesk.variable} ${syne.variable} antialiased`}>
         <TooltipProvider>
-             {children}
+          {children}
         </TooltipProvider>
         <Analytics />
         {/* <CustomCursor /> */}

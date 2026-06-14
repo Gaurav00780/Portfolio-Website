@@ -4,13 +4,12 @@ import Container from "@/components/Container";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 import ProjectsSection from "@/components/ProjectsSection";
-import Graph from "@/components/Graph";
+import Education from "@/components/EducationSection/Education";
 import SectionHeading from "@/components/SectionHeading";
 import SkillSection from "@/components/SkillsSection/SkillsSection";
 import ExperienceSection from "@/components/ExperienceSection/Experience";
 import SectionIndicator from "@/components/SectionIndicator/SectionIndicator";
 import LoadingScreen from "@/components/InitialLoadShell";
-import SponsorSection from "@/components/SponsorsSection/SponsorSection";
 
 const page = () => {
   return (
@@ -33,17 +32,13 @@ const page = () => {
               <SectionHeading title="Projects" />
               <ProjectsSection />
             </section>
-            <section data-section-label="Sponsors section">
-              <SectionHeading title="Sponsors" />
-              <SponsorSection />
-            </section>
             <section data-section-label="Experience section">
               <SectionHeading title="Experience" />
               <ExperienceSection />
             </section>
-            <section data-section-label="Github section">
-              <SectionHeading title="Github Graph" />
-              <Graph />
+            <section data-section-label="Education section">
+              <SectionHeading title="Education" />
+              <Education />
             </section>
             <section data-section-label="About section">
               <SectionHeading title="About Me" />

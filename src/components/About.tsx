@@ -16,23 +16,24 @@ const About = () => {
         <p className="mb-4 sm:mb-1 leading-relaxed text-base sm:text-lg md:text-xl text-[#A6A6A6]">
           Right now, I’m building
           <a
-            href="https://www.vidstudio.live/"
+            href="https://test-pilot-waitlist.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="mx-1 inline-flex"
           >
             <span className="inline-flex items-center gap-2 bg-black border border-neutral-700 px-2  rounded-lg hover:text-white md:text-lg font-sans shadow-[inset_0_0_12px_rgba(115,115,115,0.6)] hover:shadow-[inset_0_0_12px_rgba(139,92,246,0.6)] transition-all duration-200 font-semibold hover:border-purple-800` ml-1 mr-1">
               <Image
-                src="/official/vidstudioLogo.png"
+                src="/official/testpilot-logo.png"
                 alt="VidStudio"
                 width={16}
                 height={16}
                 className="block"
+                style={{ height: 'auto' }}
               />
-              VidStudio
+              TestPilot
             </span>
           </a>
-          - a video recording tool that help anyone record high-quality, beautiful product videos with ease & it's free.
+          - A browser testing platform powered by AI-driven visual analysis and intelligent debugging workflows.
         </p>
         <p className="mb-4 sm:mb-6 leading-relaxed text-base sm:text-lg md:text-xl text-[#A6A6A6]">
           I’m always looking for new opportunities to learn and grow.
@@ -43,7 +44,7 @@ const About = () => {
         <div className="flex flex-wrap justify-center sm:justify-start gap-6 py-2 sm:py-4">
 
           <a
-            href="https://github.com/swamimalode07"
+            href="https://github.com/Gaurav00780"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1 text-white hover:underline text-sm sm:text-base"
@@ -51,7 +52,7 @@ const About = () => {
             GitHub <ArrowUpRight size={16} />
           </a>
           <a
-            href="https://www.linkedin.com/in/swamimalode/"
+            href="https://www.linkedin.com/in/gauravsuthar7"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1 text-white hover:underline text-sm sm:text-base"

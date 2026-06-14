@@ -75,6 +75,7 @@ const ProjectCard = ({
           src={projectBg || image}
           alt="background"
           fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-600"
         />
         <motion.div
