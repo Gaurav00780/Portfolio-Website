@@ -3,9 +3,7 @@
 [gaurav.me](https://gaurav.me) – A personal portfolio to showcase my work, projects, and UI/UX designs as a Full Stack Developer and Design Engineer.
 
 ---
-
-## Screenshot
-![Portfolio Screenshot](public/official/opengraphh.jpg)  
+ 
 
 ---
 
